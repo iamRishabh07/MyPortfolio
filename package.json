@@ -1,0 +1,14 @@
+{
+  "name": "rishabh-engineering-portfolio",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "build": "node scripts/build.mjs",
+    "check": "node --check app.js && node --check profile.js && node --check terminal.js && node scripts/check.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

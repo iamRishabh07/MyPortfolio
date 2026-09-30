@@ -1,0 +1,11 @@
+import {mkdir,cp,rm,writeFile} from 'node:fs/promises';
+import {productionHeaders} from '../security-policy.mjs';
+import {fileURLToPath} from 'node:url';
+import {resolve,dirname} from 'node:path';
+const root=resolve(dirname(fileURLToPath(import.meta.url)),'..');
+await rm(resolve(root,'dist'),{recursive:true,force:true});
+await mkdir(resolve(root,'dist'),{recursive:true});
+for(const file of ['index.html','styles.css','app.js','profile.js','terminal.js','security.js','assets'])await cp(resolve(root,file),resolve(root,'dist',file),{recursive:true});
+await writeFile(resolve(root,'dist','_headers'),'/*\n'+Object.entries(productionHeaders).map(([key,value])=>`  ${key}: ${value}`).join('\n')+'\n');
+await writeFile(resolve(root,'vercel.json'),JSON.stringify({buildCommand:'npm run build',outputDirectory:'dist',headers:[{source:'/(.*)',headers:Object.entries(productionHeaders).map(([key,value])=>({key,value}))}]},null,2)+'\n');
+console.log('Ready to host: dist/ (no server runtime required).');

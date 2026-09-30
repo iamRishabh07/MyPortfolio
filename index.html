@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; script-src-attr 'none'; style-src 'self'; style-src-attr 'none'; img-src 'self' data:; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-src https://drive.google.com; worker-src 'none'">
+  <meta name="referrer" content="no-referrer"><meta name="theme-color" content="#080b12">
+  <title>Rishabh Srivastava — Senior Backend Engineer</title>
+  <meta name="description" content="Meet Rishabh Srivastava, a backend and platform engineer in Bengaluru. Explore his Go systems, professional experience, and interactive portfolio terminal.">
+  <meta property="og:title" content="Rishabh Srivastava — Backend & Platform Engineer"><meta property="og:description" content="My work, my experience, and a terminal to explore it all. Go · distributed systems · cloud platforms."><meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23080b12'/%3E%3Cpath d='m15 23 12 9-12 9m19 0h14' stroke='%2386e6df' stroke-width='5' fill='none'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="ambient" aria-hidden="true"></div><div class="cursor-light" aria-hidden="true"></div><div class="scroll-progress" aria-hidden="true"></div>
+  <header class="header wrap">
+    <a href="#home" class="wordmark" aria-label="Rishabh home"><span class="brand-symbol" aria-hidden="true">r<span>.</span></span><span>rishabh<span class="muted">.dev</span></span></a>
+    <nav aria-label="Main navigation"><a href="#work">Work</a><a href="#about">Experience</a><a href="#stack">Stack</a><a href="#contact">Contact</a></nav>
+    <div class="header-actions"><button class="terminal-launch terminal-nav" aria-label="Focus terminal"><span aria-hidden="true">&gt;_</span><span>Terminal</span><kbd>⌘ K</kbd></button><button class="icon-button" id="theme-toggle" aria-label="Switch to light theme">◐</button></div>
+  </header>
+  <main id="main" class="wrap">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="page-kicker"><span class="mono">PERSONAL PORTFOLIO <span class="muted">/ 2026</span></span><span class="mono local-info">BENGALURU <span id="local-clock">IST</span></span></div>
+      <div class="hero-grid">
+        <div class="identity-column">
+          <article class="identity-card glass spotlight" data-tilt>
+            <div class="identity-top"><span class="eyebrow">HEY, I’M</span><span class="file-label mono">about_me.md</span></div>
+            <div class="identity-heading"><h1 id="hero-title">Rishabh<br><span>Srivastava</span><span class="name-dot">.</span></h1><div class="avatar-frame"><img src="assets/portrait.png" width="1109" height="1418" alt="Rishabh Srivastava" fetchpriority="high"><span class="avatar-caption mono">THAT’S ME</span></div></div>
+            <p class="role-line">Senior Backend Engineer</p>
+            <p class="personal-intro">I write Go, untangle distributed systems, and care a lot about what happens <em>after</em> deployment.</p>
+            <div class="specialties"><span>Go / Golang</span><span>Distributed systems</span><span>Cloud platforms</span></div>
+            <div class="identity-actions"><button class="button primary" data-resume><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h7l4 4v14H7zM14 3v5h4M10 12h5m-5 4h5"/></svg>View résumé</button><a class="button secondary" href="#contact">Let’s connect</a></div>
+            <div class="identity-footer"><span class="mono">4+ YEARS BUILDING IN PRODUCTION</span><a href="https://github.com/iamRishabh07" data-github target="_blank" rel="noopener noreferrer" aria-label="Rishabh on GitHub"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 17c-4 1-4-2-6-2m12 6v-4c0-1 .3-2 1-2-4 0-8-2-8-6 0-1 .4-2 1-3-.4-1-.4-2 0-3 2 0 3 1 4 1 2-.5 4-.5 6 0 1-1 2-1 3-1 .5 1 .5 2 0 3 1 1 1 2 1 3 0 4-3 6-7 6 .8.6 1 1.4 1 2v4"/></svg><span>GitHub</span></a></div>
+          </article>
+          <div class="now-card glass spotlight"><span class="now-icon" aria-hidden="true">⌘</span><div><span class="eyebrow">CURRENTLY</span><p>Building <strong>Argos Infinity</strong></p><span class="muted">Neurealm · Retia Medical</span></div><span class="now-date mono">DEC ’25<br>PRESENT</span></div>
+        </div>
+        <section class="terminal-section" id="terminal" aria-labelledby="terminal-heading">
+          <div class="terminal-intro"><div><span class="terminal-badge mono">&gt;_</span><h2 id="terminal-heading">Get to know me. <span>In commands.</span></h2></div><span class="mono terminal-live">INTERACTIVE</span></div>
+          <div class="terminal-window glass spotlight" id="terminal-window">
+            <div class="terminal-titlebar"><div class="window-dots" aria-hidden="true"><i></i><i></i><i></i></div><span class="mono">rishabh.sh <span class="muted">— portfolio</span></span><button class="icon-button" id="clear-terminal" aria-label="Clear terminal"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5h12v14H9l-7-7zM12 9l5 6m0-6-5 6"/></svg></button></div>
+            <div class="terminal-output" id="terminal-output" role="log" aria-live="polite" aria-relevant="additions" tabindex="0"></div>
+            <form id="terminal-form" class="terminal-input-row" autocomplete="off"><label for="terminal-input"><span class="accent">visitor</span><span class="muted">@rishabh</span><span class="prompt-dollar"> $</span></label><input id="terminal-input" name="command" aria-label="Terminal command" spellcheck="false" autocapitalize="off" placeholder="Try help or resume…" enterkeyhint="send"><button type="submit" class="terminal-submit" aria-label="Run command">↵</button></form>
+            <div class="terminal-bottom mono"><span>TAB autocomplete <span class="separator">/</span> ↑ ↓ history</span><span class="shell-status">LOCAL SESSION</span></div>
+          </div>
+          <div class="command-chips" aria-label="Run a suggested command"><span class="mono">TRY IT</span><button data-command="whoami">whoami</button><button data-command="projects">projects</button><button data-command="skills">skills</button><button data-command="resume">resume <span aria-hidden="true">▤</span></button><button data-command="help">help</button></div>
+        </section>
+      </div>
+      <div class="hero-foot"><span>Previously at <strong>Accenture</strong> <span class="muted">/ Maersk</span></span><span class="mono">BACKEND ENGINEERING, WITH A HUMAN ON THE OTHER SIDE.</span><a href="#work" class="text-link">Explore my work <span class="scroll-mark" aria-hidden="true">↓</span></a></div>
+    </section>
+    <section class="section" id="work" aria-labelledby="work-heading"><div class="section-heading"><div><p class="eyebrow">01 <span>/</span> SELECTED CONTRIBUTIONS</p><h2 id="work-heading">What I’ve worked on<span class="accent">.</span></h2></div><p>Two teams. Different challenges.<br>Here’s where I made a difference.</p></div>
+      <div class="work-browser glass spotlight"><div class="work-sidebar"><span class="mono sidebar-label">EXPLORER</span><div id="project-tabs" class="project-tabs" role="tablist" aria-label="Selected projects" aria-orientation="vertical"></div><div class="sidebar-note mono"><span aria-hidden="true">⌥</span><span>Professional work.<br>My contributions.</span></div></div><div id="project-panel" class="project-panel" role="tabpanel" tabindex="0"></div></div>
+    </section>
+    <section class="section" id="about" aria-labelledby="about-heading"><div class="section-heading"><div><p class="eyebrow">02 <span>/</span> A LITTLE CONTEXT</p><h2 id="about-heading">The engineer behind the code<span class="accent">.</span></h2></div></div><div class="about-grid"><article class="about-card glass spotlight"><div class="about-card-top"><span class="mono">README</span><span aria-hidden="true">✳</span></div><h3>Hi again.<br>I’m Rishabh.</h3><p>I’m based in Bengaluru. I’ve spent the last four years working on developer platforms and real-time systems, mostly in Go.</p><p class="muted">I enjoy the parts that take a little digging: a memory profile that doesn’t look right, a retry that isn’t safe, or a service boundary that needs rethinking.</p><div class="about-principle"><span class="mono accent">HOW I WORK</span><p>Understand the failure.<br>Make the fix measurable.<br>Leave the code clearer.</p></div><div class="education"><span class="mono muted">EDUCATION</span><strong>B.Tech · KIIT</strong><span>Electronics & Telecommunication<br>Engineering · 2022</span></div></article><div class="experience-column"><p class="eyebrow">EXPERIENCE</p><div id="experience-list" class="experience-list"></div><div class="recognition glass spotlight"><span class="award-icon" aria-hidden="true">✧</span><div><span class="mono">A MOMENT I’M PROUD OF</span><strong>Pinnacle Award · FY25</strong><p>Accenture · Technical excellence & delivery impact</p></div></div></div></div></section>
+    <section class="section" id="stack" aria-labelledby="stack-heading"><div class="section-heading"><div><p class="eyebrow">03 <span>/</span> EVERYDAY TOOLS</p><h2 id="stack-heading">What I reach for<span class="accent">.</span></h2></div><p>Go at the core.<br>The rest depends on the problem.</p></div><div class="stack-shell glass spotlight"><div id="stack-tabs" class="stack-tabs" role="tablist" aria-label="Technology categories"></div><div id="stack-grid" class="stack-grid" role="tabpanel" tabindex="0"></div><div class="stack-foot"><span class="mono">ALSO IN MY TOOLKIT</span><p>GitHub Copilot & Claude Code <span class="muted">· AI-assisted development, with my review.</span></p></div></div></section>
+    <section class="contact-section glass spotlight" id="contact" aria-labelledby="contact-heading"><div class="contact-main"><p class="eyebrow">04 <span>/</span> SAY HELLO</p><h2 id="contact-heading">Let’s talk about<br>your next <span>engineering challenge.</span></h2><p>Have a backend or platform role in mind? I’d love to hear about the team and the problems you’re solving.</p><div class="contact-email-row"><a id="email-link" class="contact-email" href="mailto:iamrishabh799@gmail.com">iamrishabh799@gmail.com</a><button class="icon-button" id="copy-email" aria-label="Copy email address" title="Copy email"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M15 8V3H3v12h5"/></svg></button></div><div class="contact-actions"><a class="button primary" data-email-link href="mailto:iamrishabh799@gmail.com">Email me</a><a class="button secondary" data-github href="https://github.com/iamRishabh07" target="_blank" rel="noopener noreferrer">GitHub</a><button class="button secondary" data-resume>View résumé</button></div></div><div class="contact-signoff"><div class="mini-avatar"><img src="assets/portrait.png" alt="" width="1109" height="1418" loading="lazy"></div><span class="signoff-name">Rishabh.</span><span class="mono muted">BENGALURU, INDIA</span></div></section>
+  </main>
+  <footer class="wrap footer"><a href="#home" class="footer-signature">rishabh<span class="accent">.</span></a><span class="mono muted">© <span id="year">2026</span> RISHABH SRIVASTAVA</span><div class="footer-controls"><button class="text-button" id="motion-toggle" aria-pressed="false">Motion: on</button><button class="text-button terminal-launch">&gt;_ Open terminal</button></div></footer>
+  <dialog id="detail-dialog" aria-labelledby="dialog-title"><button class="dialog-close icon-button" aria-label="Close dialog">×</button><div id="dialog-content"></div></dialog><div id="toast" role="status" aria-live="polite"></div>
+  <noscript><div class="noscript">Enable JavaScript to use the terminal and explore projects. Contact: iamrishabh799@gmail.com.</div></noscript>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
